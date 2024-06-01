@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="bennyhodl's opensats grant application" />
+
+    <title>benny b dlc grant application</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1><strong><a href="https://github.com/bennyhodl/dlcdevkit" target="_blank">dlcdevkit</a> - <a href="https://twitter.com/bennyhodl" target="_blank">benny b</a></strong></h1>
+    <h2>Short Project Description</h2>
+
+    <div class="block">
+      The DLC ecosystem boasts excellent libraries, yet it falls short on
+      readily available components for building DLC applications. <code>dlcdevkit</code>
+      fills this gap as an application development kit incorporating both
+      <code>rust-dlc</code> and <code>bdk</code>. It provides robust libraries for transport, data
+      storage, and oracle clients, enabling seamless integration for application
+      development.
+    </div>
+
+    <h2>Long Project Description</h2>
+
+    <div class="block">
+      <p>
+      <code>dlcdevkit</code> is an application development kit for the DLC ecosystem.
+      Application developers can build their application without having to worry
+      about the underlying wallet, how to perform DLC communication, contract
+      data storage, and interfacing with oracles. Existing applications can also
+      easily add DLC support by importing the <code>dlcdevkit</code> crate.
+      </p>
+      <p>
+        The lack of marketplaces for offering/accepting DLCs has stifled the
+        discovery of contracts between counterparties. <code>dlcdevkit</code> would build an
+        agnostic DLC marketplace. An early front runner for implementation is
+        NIP 88. This allows application developers to focus on the user
+        experience and the heavy lifting of marketplace discovery to <code>dlcdevkit</code>.
+      </p>
+      <p>
+        <code>dlcdevkit</code> improves and iterates on DLCs by contributing and maintaining
+        the <code>rust-dlc</code> library. An activation of a covenant soft fork would
+        improve the efficiency of DLCs. <code>dlcdevkit</code> moves the DLC ecosystem
+        forward by introducing DLC covenants. https://github.com/bennyhodl/dlcat
+      </p>
+      <p>
+        <code>dlcdevkit</code> builds support for WASM and various language bindings to
+        broaden accessibility and functionality.
+      </p>
+    </div>
+
+    <h2>Potential impact</h2>
+    <p>DLCs introduce self-custodial, non-interactive financial contracts to Bitcoin, enhancing its utility and appeal. Traditionally, application developers have been compelled to divert resources from UI/UX development to create their own DLC implementations using basic libraries. This often results in fragmented solutions that lack interoperability across marketplaces. <code>dlcdevkit</code> seeks to unify these disparate efforts, fostering a cohesive ecosystem. Given the growing interest in Bitcoin for financial contracts and gambling, <code>dlcdevkit</code> is poised to bridge the gap, enabling a broader adoption and development within the DLC ecosystem.</p>
+
+    <h2>Project Timelines and Potential Milestones</h2>
+    <ul>
+      <li><strong>Months 1-2:</strong> Establish the core framework by building the foundation of the <code>rust-dlc</code> and <code>bdk</code> crates.</li>
+      <li><strong>Months 3-6:</strong> Develop supporting crates for data storage (including sqlite, vss, indexed db), transport (such as nostr and matrix), and the oracle client (kormir).</li>
+      <li><strong>Months 7-8:</strong> Implement WASM and various language bindings to broaden accessibility and functionality.</li>
+      <li><strong>Months 8-10:</strong> Launch the NIP 88 Nostr marketplace to facilitate efficient discovery and interaction within the ecosystem.</li>
+      <li><strong>Months 10-12:</strong> Integrate covenant support (cat, ctv, txhash, etc.) to enhance the capabilities and efficiency of DLCs.</li>
+    </ul>
+    <p>Ongoing initiatives:</p>
+    <ul>
+      <li>Continuous maintenance of the <code>rust-dlc</code> library.</li>
+      <li>Development of Kormir digit decomposition.</li>
+      <li>Collaboration with application developers to integrate and optimize the <code>dlcdevkit</code> platform.</li>
+    </ul>
+  </body>
+</html>
